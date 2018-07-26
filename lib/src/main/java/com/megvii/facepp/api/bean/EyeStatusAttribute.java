@@ -68,13 +68,13 @@ public class EyeStatusAttribute {
 
     @Override
     public String toString() {
-        return "EyeStatusAttribute{" +
-                "normal_glass_eye_open=" + normal_glass_eye_open +
-                ", no_glass_eye_close=" + no_glass_eye_close +
-                ", occlusion=" + occlusion +
-                ", no_glass_eye_open=" + no_glass_eye_open +
-                ", normal_glass_eye_close=" + normal_glass_eye_close +
-                ", dark_glasses=" + dark_glasses +
+        return "{" +
+                "\"normal_glass_eye_open\":" + normal_glass_eye_open +
+                ", \"no_glass_eye_close\":" + no_glass_eye_close +
+                ", \"occlusion\":" + occlusion +
+                ", \"no_glass_eye_open\":" + no_glass_eye_open +
+                ", \"normal_glass_eye_close\":" + normal_glass_eye_close +
+                ", \"dark_glasses\":" + dark_glasses +
                 '}';
     }
 }

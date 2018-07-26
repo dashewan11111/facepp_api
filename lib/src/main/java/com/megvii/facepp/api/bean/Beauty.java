@@ -28,9 +28,9 @@ public class Beauty {
 
     @Override
     public String toString() {
-        return "Beauty{" +
-                "female_score=" + female_score +
-                ", male_score=" + male_score +
+        return "{" +
+                "\"female_score\":" + female_score +
+                ", \"male_score\":" + male_score +
                 '}';
     }
 }

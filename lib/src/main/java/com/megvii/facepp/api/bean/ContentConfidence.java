@@ -27,9 +27,9 @@ public class ContentConfidence {
 
     @Override
     public String toString() {
-        return "ContentConfidence{" +
-                "content='" + content + '\'' +
-                ", confidence=" + confidence +
+        return "{" +
+                "\"content\":\'" + content + "\'" +
+                ", \"confidence\":" + confidence +
                 '}';
     }
 }

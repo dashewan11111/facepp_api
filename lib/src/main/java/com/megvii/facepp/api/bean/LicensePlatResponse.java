@@ -20,8 +20,8 @@ public class LicensePlatResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "LicensePlatResponse{" +
-                "results=" + results +
+        return "{" +
+                "\"results\":" + results +
                 '}';
     }
 }

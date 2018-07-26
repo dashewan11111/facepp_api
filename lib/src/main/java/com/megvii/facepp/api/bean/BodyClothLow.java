@@ -26,9 +26,9 @@ public class BodyClothLow {
 
     @Override
     public String toString() {
-        return "BodyClothLow{" +
-                "lower_body_cloth_color='" + lower_body_cloth_color + '\'' +
-                ", lower_body_cloth_color_rgb=" + lower_body_cloth_color_rgb +
+        return "{" +
+                "\"lower_body_cloth_color\":\'" + lower_body_cloth_color + "\'" +
+                ", \"lower_body_cloth_color_rgb\":" + lower_body_cloth_color_rgb +
                 '}';
     }
 }

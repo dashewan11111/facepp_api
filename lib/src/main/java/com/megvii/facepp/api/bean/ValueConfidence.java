@@ -28,9 +28,9 @@ public class ValueConfidence {
 
     @Override
     public String toString() {
-        return "ValueConfidence{" +
-                "value='" + value + '\'' +
-                ", confidence=" + confidence +
+        return "{" +
+                "\"value\":\'" + value + "\'" +
+                ", \"confidence\":" + confidence +
                 '}';
     }
 }

@@ -19,8 +19,8 @@ public class GestureResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "GestureResponse{" +
-                "hands=" + hands +
+        return "{" +
+                "\"hands\":" + hands +
                 '}';
     }
 }

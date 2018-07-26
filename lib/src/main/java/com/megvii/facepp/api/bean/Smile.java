@@ -18,8 +18,8 @@ public class Smile extends ValueBean {
 
     @Override
     public String toString() {
-        return "Smile{" +
-                "threshold=" + threshold +
+        return "{" +
+                "\"threshold\":" + threshold +
                 '}';
     }
 }

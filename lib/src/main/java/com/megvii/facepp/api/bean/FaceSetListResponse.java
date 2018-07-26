@@ -33,9 +33,9 @@ public class FaceSetListResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "FaceSetListResponse{" +
-                "faceSets=" + faceSets +
-                ", next='" + next + '\'' +
+        return "{" +
+                "\"faceSets\":" + faceSets +
+                ", \"next\":\'" + next + "\'" +
                 '}';
     }
 }

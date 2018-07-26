@@ -73,11 +73,11 @@ public class Face {
 
     @Override
     public String toString() {
-        return "Face{" +
-                "face_token='" + face_token + '\'' +
-                ", face_rectangle=" + face_rectangle +
-                ", landmark=" + landmark +
-                ", attributes=" + attributes +
+        return "{" +
+                "\"face_token\":\'" + face_token + "\'" +
+                ", \"face_rectangle\":" + face_rectangle +
+                ", \"landmark\":" + landmark +
+                ", \"attributes\":" + attributes +
                 '}';
     }
 }

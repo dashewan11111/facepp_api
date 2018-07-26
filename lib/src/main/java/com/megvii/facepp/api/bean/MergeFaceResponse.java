@@ -18,8 +18,8 @@ public class MergeFaceResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "MergeFaceResponse{" +
-                "result='" + result + '\'' +
+        return "{" +
+                "\"result\":\'" + result + "\'" +
                 '}';
     }
 }

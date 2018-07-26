@@ -48,11 +48,11 @@ public class FaceSet {
 
     @Override
     public String toString() {
-        return "FaceSet{" +
-                "faceset_token='" + faceset_token + '\'' +
-                ", outer_id='" + outer_id + '\'' +
-                ", display_name='" + display_name + '\'' +
-                ", tags='" + tags + '\'' +
+        return "{" +
+                "\"faceset_token\":\'" + faceset_token + "\'" +
+                ", \"outer_id\":\'" + outer_id + "\'" +
+                ", \"display_name\":\'" + display_name + "\'" +
+                ", \"tags\":\'" + tags + "\'" +
                 '}';
     }
 }

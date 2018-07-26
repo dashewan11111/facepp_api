@@ -48,11 +48,11 @@ public class Skinstatus {
 
     @Override
     public String toString() {
-        return "Skinstatus{" +
-                "dark_circle=" + dark_circle +
-                ", stain=" + stain +
-                ", acne=" + acne +
-                ", health=" + health +
+        return "{" +
+                "\"dark_circle\":" + dark_circle +
+                ", \"stain\":" + stain +
+                ", \"acne\":" + acne +
+                ", \"health\":" + health +
                 '}';
     }
 }

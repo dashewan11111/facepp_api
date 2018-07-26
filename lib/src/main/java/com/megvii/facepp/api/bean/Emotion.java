@@ -78,14 +78,14 @@ public class Emotion {
 
     @Override
     public String toString() {
-        return "Emotion{" +
-                "sadness=" + sadness +
-                ", neutral=" + neutral +
-                ", disgust=" + disgust +
-                ", anger=" + anger +
-                ", surprise=" + surprise +
-                ", fear=" + fear +
-                ", happiness=" + happiness +
+        return "{" +
+                "\"sadness\":" + sadness +
+                ", \"neutral\":" + neutral +
+                ", \"disgust\":" + disgust +
+                ", \"anger\":" + anger +
+                ", \"surprise\":" + surprise +
+                ", \"fear\":" + fear +
+                ", \"happiness\":" + happiness +
                 '}';
     }
 }

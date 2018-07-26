@@ -38,10 +38,10 @@ public class SearchFaceResult {
 
     @Override
     public String toString() {
-        return "SearchFaceResult{" +
-                "face_token='" + face_token + '\'' +
-                ", confidence=" + confidence +
-                ", user_id='" + user_id + '\'' +
+        return "{" +
+                "\"face_token\":\'" + face_token + "\'" +
+                ", \"confidence\":" + confidence +
+                ", \"user_id\":\'" + user_id + "\'" +
                 '}';
     }
 }

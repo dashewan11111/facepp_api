@@ -28,9 +28,9 @@ public class Eyegaze {
 
     @Override
     public String toString() {
-        return "Eyegaze{" +
-                "right_eye_gaze=" + right_eye_gaze +
-                ", left_eye_gaze=" + left_eye_gaze +
+        return "{" +
+                "\"right_eye_gaze\":" + right_eye_gaze +
+                ", \"left_eye_gaze\":" + left_eye_gaze +
                 '}';
     }
 }

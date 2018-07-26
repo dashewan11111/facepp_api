@@ -20,8 +20,8 @@ public class HumanBodyDetectResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "HumanBodyDetectResponse{" +
-                "humanbodies=" + humanbodies +
+        return "{" +
+                "\"humanbodies\":" + humanbodies +
                 '}';
     }
 }

@@ -18,8 +18,8 @@ public class RecognizeTextRespons extends BaseResponse {
 
     @Override
     public String toString() {
-        return "RecognizeTextRespons{" +
-                "result=" + result +
+        return "{" +
+                "\"result\":" + result +
                 '}';
     }
 }

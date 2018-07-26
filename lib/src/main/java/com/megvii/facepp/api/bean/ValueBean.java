@@ -18,8 +18,8 @@ public class ValueBean {
 
     @Override
     public String toString() {
-        return "ValueBean{" +
-                "value='" + value + '\'' +
+        return "{" +
+                "\"value\":\'" + value + "\'" +
                 '}';
     }
 }

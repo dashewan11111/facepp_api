@@ -47,11 +47,11 @@ public class MouthStatus {
 
     @Override
     public String toString() {
-        return "MouthStatus{" +
-                "close=" + close +
-                ", surgical_mask_or_respirator=" + surgical_mask_or_respirator +
-                ", open=" + open +
-                ", other_occlusion=" + other_occlusion +
+        return "{" +
+                "\"close\":" + close +
+                ", \"surgical_mask_or_respirator\":" + surgical_mask_or_respirator +
+                ", \"open\":" + open +
+                ", \"other_occlusion\":" + other_occlusion +
                 '}';
     }
 }

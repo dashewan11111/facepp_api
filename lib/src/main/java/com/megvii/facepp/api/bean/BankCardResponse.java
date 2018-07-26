@@ -19,8 +19,8 @@ public class BankCardResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "BankCardResponse{" +
-                "bank_cards=" + bank_cards +
+        return "{" +
+                "\"bank_cards\":" + bank_cards +
                 '}';
     }
 }

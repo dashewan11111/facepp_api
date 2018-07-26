@@ -18,8 +18,8 @@ public class Threshold extends ValueBean {
 
     @Override
     public String toString() {
-        return "Threshold{" +
-                "threshold=" + threshold +
+        return "{" +
+                "\"threshold\":" + threshold +
                 '}';
     }
 }

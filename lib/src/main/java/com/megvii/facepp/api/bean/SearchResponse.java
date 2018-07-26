@@ -41,10 +41,10 @@ public class SearchResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "SearchResponse{" +
-                "results=" + results +
-                ", thresholds=" + thresholds +
-                ", faces=" + faces +
+        return "{" +
+                "\"results\":" + results +
+                ", \"thresholds\":" + thresholds +
+                ", \"faces\":" + faces +
                 '}';
     }
 }

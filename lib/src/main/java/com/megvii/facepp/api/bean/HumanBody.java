@@ -38,10 +38,10 @@ public class HumanBody {
 
     @Override
     public String toString() {
-        return "HumanBody{" +
-                "confidence=" + confidence +
-                ", humanbody_rectangle=" + humanbody_rectangle +
-                ", attributes=" + attributes +
+        return "{" +
+                "\"confidence\":" + confidence +
+                ", \"humanbody_rectangle\":" + humanbody_rectangle +
+                ", \"attributes\":" + attributes +
                 '}';
     }
 }

@@ -20,8 +20,8 @@ public class FaceAnalyzeResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "FaceAnalyzeResponse{" +
-                "faces=" + faces +
+        return "{" +
+                "\"faces\":" + faces +
                 '}';
     }
 }

@@ -28,9 +28,9 @@ public class Hands {
 
     @Override
     public String toString() {
-        return "Hands{" +
-                "gesture=" + gesture +
-                ", hand_rectangle=" + hand_rectangle +
+        return "{" +
+                "\"gesture\":" + gesture +
+                ", \"hand_rectangle\":" + hand_rectangle +
                 '}';
     }
 }

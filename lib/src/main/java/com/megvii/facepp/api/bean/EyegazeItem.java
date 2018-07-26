@@ -48,11 +48,11 @@ public class EyegazeItem {
 
     @Override
     public String toString() {
-        return "EyegazeItem{" +
-                "vector_z_component=" + vector_z_component +
-                ", vector_x_component=" + vector_x_component +
-                ", vector_y_component=" + vector_y_component +
-                ", position_y_coordinate=" + position_y_coordinate +
+        return "{" +
+                "\"vector_z_component\":" + vector_z_component +
+                ", \"vector_x_component\":" + vector_x_component +
+                ", \"vector_y_component\":" + vector_y_component +
+                ", \"position_y_coordinate\":" + position_y_coordinate +
                 '}';
     }
 }

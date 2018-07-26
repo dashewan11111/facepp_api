@@ -30,9 +30,9 @@ public class SceneDetectResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "SceneDetectResponse{" +
-                "scenes=" + scenes +
-                ", objects=" + objects +
+        return "{" +
+                "\"scenes\":" + scenes +
+                ", \"objects\":" + objects +
                 '}';
     }
 }

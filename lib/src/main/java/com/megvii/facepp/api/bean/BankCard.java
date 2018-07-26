@@ -50,11 +50,11 @@ public class BankCard {
 
     @Override
     public String toString() {
-        return "BankCard{" +
-                "bound=" + bound +
-                ", number='" + number + '\'' +
-                ", bank='" + bank + '\'' +
-                ", organization=" + organization +
+        return "{" +
+                "\"bound\":" + bound +
+                ", \"number\":\'" + number + "\'" +
+                ", \"bank\":\'" + bank + "\'" +
+                ", \"organization\":" + organization +
                 '}';
     }
 }

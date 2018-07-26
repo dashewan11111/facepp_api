@@ -47,11 +47,11 @@ public class Bound {
 
     @Override
     public String toString() {
-        return "Bound{" +
-                "right_top=" + right_top +
-                ", left_top=" + left_top +
-                ", right_bottom=" + right_bottom +
-                ", left_bottom=" + left_bottom +
+        return "{" +
+                "\"right_top\":" + right_top +
+                ", \"left_top\":" + left_top +
+                ", \"right_bottom\":" + right_bottom +
+                ", \"left_bottom\":" + left_bottom +
                 '}';
     }
 }

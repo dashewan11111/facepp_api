@@ -47,11 +47,11 @@ public class CommonRect {
 
     @Override
     public String toString() {
-        return "CommonRect{" +
-                "top=" + top +
-                ", left=" + left +
-                ", width=" + width +
-                ", height=" + height +
+        return "{" +
+                "\"top\":" + top +
+                ", \"left\":" + left +
+                ", \"width\":" + width +
+                ", \"height\":" + height +
                 '}';
     }
 }

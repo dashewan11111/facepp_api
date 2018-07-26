@@ -48,11 +48,11 @@ public class DriverLicenseSecond {
 
     @Override
     public String toString() {
-        return "DriverLicenseSecond{" +
-                "confidence=" + confidence +
-                ", name=" + name +
-                ", license_number=" + license_number +
-                ", file_number=" + file_number +
+        return "{" +
+                "\"confidence\":" + confidence +
+                ", \"name\":" + name +
+                ", \"license_number\":" + license_number +
+                ", \"file_number\":" + file_number +
                 '}';
     }
 }

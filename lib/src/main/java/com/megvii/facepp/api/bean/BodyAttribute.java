@@ -38,10 +38,10 @@ public class BodyAttribute {
 
     @Override
     public String toString() {
-        return "BodyAttribute{" +
-                "gender=" + gender +
-                ", upper_body_cloth=" + upper_body_cloth +
-                ", lower_body_cloth=" + lower_body_cloth +
+        return "{" +
+                "\"gender\":" + gender +
+                ", \"upper_body_cloth\":" + upper_body_cloth +
+                ", \"lower_body_cloth\":" + lower_body_cloth +
                 '}';
     }
 }

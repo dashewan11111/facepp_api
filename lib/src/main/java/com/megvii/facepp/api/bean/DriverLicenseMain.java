@@ -142,21 +142,21 @@ public class DriverLicenseMain {
 
     @Override
     public String toString() {
-        return "DriverLicenseMain{" +
-                "confidence=" + confidence +
-                ", name=" + name +
-                ", address=" + address +
-                ", birthday=" + birthday +
-                ", gender=" + gender +
-                ", license_number=" + license_number +
-                ", clazz=" + clazz +
-                ", nationality=" + nationality +
-                ", issued_by=" + issued_by +
-                ", issue_date=" + issue_date +
-                ", valid_from=" + valid_from +
-                ", valid_for=" + valid_for +
-                ", valid_date=" + valid_date +
-                ", version=" + version +
+        return "{" +
+                "\"confidence\":" + confidence +
+                ", \"name\":" + name +
+                ", \"address\":" + address +
+                ", \"birthday\":" + birthday +
+                ", \"gender\":" + gender +
+                ", \"license_number\":" + license_number +
+                ", \"clazz\":" + clazz +
+                ", \"nationality\":" + nationality +
+                ", \"issued_by\":" + issued_by +
+                ", \"issue_date\":" + issue_date +
+                ", \"valid_from\":" + valid_from +
+                ", \"valid_for\":" + valid_for +
+                ", \"valid_date\":" + valid_date +
+                ", \"version\":" + version +
                 '}';
     }
 }

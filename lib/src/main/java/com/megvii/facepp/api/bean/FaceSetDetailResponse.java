@@ -48,11 +48,11 @@ public class FaceSetDetailResponse extends FaceSetCreatResponse {
 
     @Override
     public String toString() {
-        return "FaceSetDetailResponse{" +
-                "display_name='" + display_name + '\'' +
-                ", user_data='" + user_data + '\'' +
-                ", tags='" + tags + '\'' +
-                ", next='" + next + '\'' +
+        return "{" +
+                "\"display_name\":\'" + display_name + "\'" +
+                ", \"user_data\":\'" + user_data + "\'" +
+                ", \"tags\":\'" + tags + "\'" +
+                ", \"next\":\'" + next + "\'" +
                 '}';
     }
 }

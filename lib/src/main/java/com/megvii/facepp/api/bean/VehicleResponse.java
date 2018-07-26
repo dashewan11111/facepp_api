@@ -20,8 +20,8 @@ public class VehicleResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "VehicleResponse{" +
-                "cards=" + cards +
+        return "{" +
+                "\"cards\":" + cards +
                 '}';
     }
 }

@@ -50,11 +50,11 @@ public class FaceDetailResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "FaceDetailResponse{" +
-                ", face_token='" + face_token + '\'' +
-                ", user_id='" + user_id + '\'' +
-                ", face_rectangle=" + face_rectangle +
-                ", facesets=" + facesets +
+        return "{" +
+                "\"face_token\":\'" + face_token + "\'" +
+                ", \"user_id\":\'" + user_id + "\'" +
+                ", \"face_rectangle\":" + face_rectangle +
+                ", \"facesets\":" + facesets +
                 '}';
     }
 }

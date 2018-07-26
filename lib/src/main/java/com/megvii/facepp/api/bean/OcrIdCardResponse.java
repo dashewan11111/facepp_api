@@ -20,8 +20,8 @@ public class OcrIdCardResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "CardResponse{" +
-                "cards=" + cards +
+        return "{" +
+                "\"cards\":" + cards +
                 '}';
     }
 }

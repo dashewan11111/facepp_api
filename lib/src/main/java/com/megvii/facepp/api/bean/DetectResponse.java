@@ -20,8 +20,8 @@ public class DetectResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "DetectBean{" +
-                ", faces=" + faces +
+        return "{" +
+                "\"faces\":" + faces +
                 '}';
     }
 }

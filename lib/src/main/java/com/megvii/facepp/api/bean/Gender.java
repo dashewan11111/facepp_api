@@ -28,9 +28,9 @@ public class Gender {
 
     @Override
     public String toString() {
-        return "Gender{" +
-                "male=" + male +
-                ", female=" + female +
+        return "{" +
+                "\"male\":" + male +
+                ", \"female\":" + female +
                 '}';
     }
 }

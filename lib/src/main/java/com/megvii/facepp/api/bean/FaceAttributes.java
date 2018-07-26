@@ -136,21 +136,21 @@ public class FaceAttributes {
 
     @Override
     public String toString() {
-        return "FaceAttributes{" +
-                "gender=" + gender +
-                ", age=" + age +
-                ", smiling=" + smiling +
-                ", headpose=" + headpose +
-                ", facequality=" + facequality +
-                ", blur=" + blur +
-                ", eyestatus=" + eyestatus +
-                ", emotion=" + emotion +
-                ", glass=" + glass +
-                ", ethnicity=" + ethnicity +
-                ", beauty=" + beauty +
-                ", mouthstatus=" + mouthstatus +
-                ", eyegaze=" + eyegaze +
-                ", skinstatus=" + skinstatus +
+        return "{" +
+                "\"gender\":" + gender +
+                ", \"age\":" + age +
+                ", \"smiling\":" + smiling +
+                ", \"headpose\":" + headpose +
+                ", \"facequality\":" + facequality +
+                ", \"blur\":" + blur +
+                ", \"eyestatus\":" + eyestatus +
+                ", \"emotion\":" + emotion +
+                ", \"glass\":" + glass +
+                ", \"ethnicity\":" + ethnicity +
+                ", \"beauty\":" + beauty +
+                ", \"mouthstatus\":" + mouthstatus +
+                ", \"eyegaze\":" + eyegaze +
+                ", \"skinstatus\":" + skinstatus +
                 '}';
     }
 }

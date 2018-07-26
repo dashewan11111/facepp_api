@@ -137,20 +137,20 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card{" +
-                "type=" + type +
-                ", address='" + address + '\'' +
-                ", birthday='" + birthday + '\'' +
-                ", gender='" + gender + '\'' +
-                ", id_card_number='" + id_card_number + '\'' +
-                ", name='" + name + '\'' +
-                ", race='" + race + '\'' +
-                ", side='" + side + '\'' +
-                ", front='" + front + '\'' +
-                ", back='" + back + '\'' +
-                ", issued_by='" + issued_by + '\'' +
-                ", valid_date='" + valid_date + '\'' +
-                ", legality='" + legality + '\'' +
+        return "{" +
+                "\"type\":" + type +
+                ", \"address\":\'" + address + "\'" +
+                ", \"birthday\":\'" + birthday + "\'" +
+                ", \"gender\":\'" + gender + "\'" +
+                ", \"id_card_number\":\'" + id_card_number + "\'" +
+                ", \"name\":\'" + name + "\'" +
+                ", \"race\":\'" + race + "\'" +
+                ", \"side\":\'" + side + "\'" +
+                ", \"front\":\'" + front + "\'" +
+                ", \"back\":\'" + back + "\'" +
+                ", \"issued_by\":\'" + issued_by + "\'" +
+                ", \"valid_date\":\'" + valid_date + "\'" +
+                ", \"legality\":\'" + legality + "\'" +
                 '}';
     }
 }

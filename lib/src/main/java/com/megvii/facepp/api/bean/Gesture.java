@@ -188,27 +188,27 @@ public class Gesture {
 
     @Override
     public String toString() {
-        return "Gesture{" +
-                "unknown=" + unknown +
-                ", heart_a=" + heart_a +
-                ", heart_b=" + heart_b +
-                ", heart_c=" + heart_c +
-                ", heart_d=" + heart_d +
-                ", ok=" + ok +
-                ", hand_open=" + hand_open +
-                ", thumb_up=" + thumb_up +
-                ", thumb_down=" + thumb_down +
-                ", rock=" + rock +
-                ", namaste=" + namaste +
-                ", palm_up=" + palm_up +
-                ", fist=" + fist +
-                ", index_finger_up=" + index_finger_up +
-                ", double_finger_up=" + double_finger_up +
-                ", victory=" + victory +
-                ", big_v=" + big_v +
-                ", phonecall=" + phonecall +
-                ", beg=" + beg +
-                ", thanks=" + thanks +
+        return "{" +
+                "\"unknown\":" + unknown +
+                ", \"heart_a\":" + heart_a +
+                ", \"heart_b\":" + heart_b +
+                ", \"heart_c\":" + heart_c +
+                ", \"heart_d\":" + heart_d +
+                ", \"ok\":" + ok +
+                ", \"hand_open\":" + hand_open +
+                ", \"thumb_up\":" + thumb_up +
+                ", \"thumb_down\":" + thumb_down +
+                ", \"rock\":" + rock +
+                ", \"namaste\":" + namaste +
+                ", \"palm_up\":" + palm_up +
+                ", \"fist\":" + fist +
+                ", \"index_finger_up\":" + index_finger_up +
+                ", \"double_finger_up\":" + double_finger_up +
+                ", \"victory\":" + victory +
+                ", \"big_v\":" + big_v +
+                ", \"phonecall\":" + phonecall +
+                ", \"beg\":" + beg +
+                ", \"thanks\":" + thanks +
                 '}';
     }
 }

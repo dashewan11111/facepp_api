@@ -35,10 +35,10 @@ public class ColorRGB {
 
     @Override
     public String toString() {
-        return "Color{" +
-                "r=" + r +
-                ", g=" + g +
-                ", b=" + b +
+        return "{" +
+                "\"r\":" + r +
+                ", \"g\":" + g +
+                ", \"b\":" + b +
                 '}';
     }
 }

@@ -38,10 +38,10 @@ public class Blurness {
 
     @Override
     public String toString() {
-        return "Blurness{" +
-                "blurness=" + blurness +
-                ", motionblur=" + motionblur +
-                ", gaussianblur=" + gaussianblur +
+        return "{" +
+                "\"blurness\":" + blurness +
+                ", \"motionblur\":" + motionblur +
+                ", \"gaussianblur\":" + gaussianblur +
                 '}';
     }
 }

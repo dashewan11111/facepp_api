@@ -18,8 +18,8 @@ public class HumanSegmentResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "HumanSegment{" +
-                ", result='" + result + '\'' +
+        return "{" +
+                "\"result\":\'" + result + "\'" +
                 '}';
     }
 }

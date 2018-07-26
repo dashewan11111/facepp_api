@@ -28,9 +28,9 @@ public class DriverLicenseResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "DriverLicenseResponse{" +
-                "main=" + main +
-                ", second=" + second +
+        return "{" +
+                "\"main\":" + main +
+                ", \"second\":" + second +
                 '}';
     }
 }

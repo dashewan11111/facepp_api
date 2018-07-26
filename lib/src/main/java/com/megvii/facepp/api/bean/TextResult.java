@@ -53,11 +53,11 @@ public class TextResult {
 
     @Override
     public String toString() {
-        return "TextResult{" +
-                "type='" + type + '\'' +
-                ", value='" + value + '\'' +
-                ", position=" + position +
-                ", child_objects=" + child_objects +
+        return "{" +
+                "\"type\":\'" + type + "\'" +
+                ", \"value\":\'" + value + "\'" +
+                ", \"position\":" + position +
+                ", \"child_objects\":" + child_objects +
                 '}';
     }
 }

@@ -48,11 +48,11 @@ public class BaseResponse {
 
     @Override
     public String toString() {
-        return "BaseResponse{" +
-                "time_used=" + time_used +
-                ", image_id='" + image_id + '\'' +
-                ", request_id='" + request_id + '\'' +
-                ", error_message='" + error_message + '\'' +
+        return "{" +
+                "\"time_used\":" + time_used +
+                ", \"image_id\":\'" + image_id + "\'" +
+                ", \"request_id\":\'" + request_id + "\'" +
+                ", \"error_message\":\'" + error_message + "\'" +
                 '}';
     }
 }

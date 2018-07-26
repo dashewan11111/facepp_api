@@ -28,9 +28,9 @@ public class EyeStatus {
 
     @Override
     public String toString() {
-        return "EyeStatus{" +
-                "left_eye_status=" + left_eye_status +
-                ", right_eye_status=" + right_eye_status +
+        return "{" +
+                "\"left_eye_status\":" + left_eye_status +
+                ", \"right_eye_status\":" + right_eye_status +
                 '}';
     }
 }

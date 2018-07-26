@@ -18,8 +18,8 @@ public class BeautyResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "BeautyResponse{" +
-                "result='" + result + '\'' +
+        return "{" +
+                "\"result\":\'" + result + "\'" +
                 '}';
     }
 }

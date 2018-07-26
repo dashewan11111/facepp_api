@@ -59,12 +59,12 @@ public class FaceSetCreatResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "FaceSetCreatResponse{" +
-                "faceset_token='" + faceset_token + '\'' +
-                ", outer_id='" + outer_id + '\'' +
-                ", face_added=" + face_added +
-                ", face_count=" + face_count +
-                ", failure_detail=" + Arrays.toString(failure_detail) +
+        return "{" +
+                "\"faceset_token\":\'" + faceset_token + "\'" +
+                ", \"outer_id\":\'" + outer_id + "\'" +
+                ", \"face_added\":" + face_added +
+                ", \"face_count\":" + face_count +
+                ", \"failure_detail\":" + Arrays.toString(failure_detail) +
                 '}';
     }
 
@@ -90,9 +90,9 @@ public class FaceSetCreatResponse extends BaseResponse {
 
         @Override
         public String toString() {
-            return "FailureDetail{" +
-                    "face_token='" + face_token + '\'' +
-                    ", reason='" + reason + '\'' +
+            return "{" +
+                    "\"face_token\":\'" + face_token + "\'" +
+                    ", \"reason\":\'" + reason + "\'" +
                     '}';
         }
     }

@@ -38,10 +38,10 @@ public class LicensePlat {
 
     @Override
     public String toString() {
-        return "LicensePlat{" +
-                "bound=" + bound +
-                ", colore=" + colore +
-                ", license_plate_number='" + license_plate_number + '\'' +
+        return "{" +
+                "\"bound\":" + bound +
+                ", \"colore\":" + colore +
+                ", \"license_plate_number\":\'" + license_plate_number + "\'" +
                 '}';
     }
 }

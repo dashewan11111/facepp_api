@@ -71,13 +71,13 @@ public class CompareResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return "CompareResponse{" +
-                "confidence=" + confidence +
-                ", thresholds=" + thresholds +
-                ", image_id1='" + image_id1 + '\'' +
-                ", image_id2='" + image_id2 + '\'' +
-                ", faces1=" + faces1 +
-                ", faces2=" + faces2 +
+        return "{" +
+                "\"confidence\":" + confidence +
+                ", \"thresholds\":" + thresholds +
+                ", \"image_id1\":\'" + image_id1 + "\'" +
+                ", \"image_id2\":\'" + image_id2 + "\'" +
+                ", \"faces1\":" + faces1 +
+                ", \"faces2\":" + faces2 +
                 '}';
     }
 }

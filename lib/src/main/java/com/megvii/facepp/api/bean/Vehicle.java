@@ -138,20 +138,20 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return "Vehicle{" +
-                "type=" + type +
-                ", plate_no='" + plate_no + '\'' +
-                ", vehicle_type='" + vehicle_type + '\'' +
-                ", owner='" + owner + '\'' +
-                ", address='" + address + '\'' +
-                ", use_character='" + use_character + '\'' +
-                ", model='" + model + '\'' +
-                ", vin='" + vin + '\'' +
-                ", engine_no='" + engine_no + '\'' +
-                ", register_date='" + register_date + '\'' +
-                ", issue_date='" + issue_date + '\'' +
-                ", side='" + side + '\'' +
-                ", issued_by='" + issued_by + '\'' +
+        return "{" +
+                "\"type\":" + type +
+                ", \"plate_no\":\'" + plate_no + "\'" +
+                ", \"vehicle_type\":\'" + vehicle_type + "\'" +
+                ", \"owner\":\'" + owner + "\'" +
+                ", \"address\":\'" + address + "\'" +
+                ", \"use_character\":\'" + use_character + "\'" +
+                ", \"model\":\'" + model + "\'" +
+                ", \"vin\":\'" + vin + "\'" +
+                ", \"engine_no\":\'" + engine_no + "\'" +
+                ", \"register_date\":\'" + register_date + "\'" +
+                ", \"issue_date\":\'" + issue_date + "\'" +
+                ", \"side\":\'" + side + "\'" +
+                ", \"issued_by\":\'" + issued_by + "\'" +
                 '}';
     }
 }

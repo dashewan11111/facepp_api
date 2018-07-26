@@ -28,9 +28,9 @@ public class FaceToken extends BaseResponse {
 
     @Override
     public String toString() {
-        return "FaceToken{" +
-                "face_token='" + face_token + '\'' +
-                ", user_id='" + user_id + '\'' +
+        return "{" +
+                "\"face_token\":\'" + face_token + "\'" +
+                ", \"user_id\":\'" + user_id + "\'" +
                 '}';
     }
 }

@@ -27,10 +27,9 @@ public class BodyClothUp {
 
     @Override
     public String toString() {
-        return "BodyClothUp{" +
-                "upper_body_cloth_color='" + upper_body_cloth_color + '\'' +
-                ", upper_body_cloth_color_rgb=" + upper_body_cloth_color_rgb +
+        return "{" +
+                "\"upper_body_cloth_color\":\'" + upper_body_cloth_color + "\'" +
+                ", \"upper_body_cloth_color_rgb\":" + upper_body_cloth_color_rgb +
                 '}';
     }
-
 }

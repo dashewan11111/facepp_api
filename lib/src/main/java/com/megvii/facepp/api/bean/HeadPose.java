@@ -38,10 +38,10 @@ public class HeadPose {
 
     @Override
     public String toString() {
-        return "HeadPose{" +
-                "yaw_angle=" + yaw_angle +
-                ", pitch_angle=" + pitch_angle +
-                ", roll_angle=" + roll_angle +
+        return "{" +
+                "\"yaw_angle\":" + yaw_angle +
+                ", \"pitch_angle\":" + pitch_angle +
+                ", \"roll_angle\":" + roll_angle +
                 '}';
     }
 }

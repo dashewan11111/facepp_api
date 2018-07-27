@@ -1,5 +1,7 @@
 package com.megvii.facepp.api.bean;
 
+import java.util.List;
+
 /**
  * @author by licheng on 2018/7/3.
  */
@@ -11,6 +13,10 @@ public class FaceSetDetailResponse extends FaceSetCreatResponse {
     private String user_data;
 
     private String tags;
+
+    private int face_count;
+
+    private List<String> face_tokens;
 
     private String next;
 
@@ -38,6 +44,24 @@ public class FaceSetDetailResponse extends FaceSetCreatResponse {
         this.tags = tags;
     }
 
+    @Override
+    public int getFace_count() {
+        return face_count;
+    }
+
+    @Override
+    public void setFace_count(int face_count) {
+        this.face_count = face_count;
+    }
+
+    public List<String> getFace_tokens() {
+        return face_tokens;
+    }
+
+    public void setFace_tokens(List<String> face_tokens) {
+        this.face_tokens = face_tokens;
+    }
+
     public String getNext() {
         return next;
     }
@@ -52,6 +76,8 @@ public class FaceSetDetailResponse extends FaceSetCreatResponse {
                 "\"display_name\":\'" + display_name + "\'" +
                 ", \"user_data\":\'" + user_data + "\'" +
                 ", \"tags\":\'" + tags + "\'" +
+                ", \"face_count\":" + face_count +
+                ", \"face_tokens\":" + face_tokens +
                 ", \"next\":\'" + next + "\'" +
                 '}';
     }

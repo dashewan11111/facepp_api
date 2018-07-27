@@ -14,6 +14,8 @@ public class FaceSet {
 
     private String tags;
 
+    private String user_data;
+
     public String getFaceset_token() {
         return faceset_token;
     }
@@ -46,6 +48,14 @@ public class FaceSet {
         this.tags = tags;
     }
 
+    public String getUser_data() {
+        return user_data;
+    }
+
+    public void setUser_data(String user_data) {
+        this.user_data = user_data;
+    }
+
     @Override
     public String toString() {
         return "{" +
@@ -53,6 +63,7 @@ public class FaceSet {
                 ", \"outer_id\":\'" + outer_id + "\'" +
                 ", \"display_name\":\'" + display_name + "\'" +
                 ", \"tags\":\'" + tags + "\'" +
+                ", \"user_data\":\'" + user_data + "\'" +
                 '}';
     }
 }

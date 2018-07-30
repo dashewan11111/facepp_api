@@ -15,9 +15,9 @@ public interface IHumanBodyApi {
 
     String BASE_URL = "https://api-cn.faceplusplus.com/humanbodypp";
 
-    String API_HUMANBODY_DETECT = "/v1/detect";
-    String API_HUMANBODY_SEGMENT = "/v1/segment";
-    String API_HUMANBODY_GUSTURE = "/beta/gesture";
+    String API_HUMANBODY_DETECT = BASE_URL + "/v1/detect";
+    String API_HUMANBODY_SEGMENT = BASE_URL + "/v1/segment";
+    String API_HUMANBODY_GUSTURE = BASE_URL + "/beta/gesture";
 
 
     /**

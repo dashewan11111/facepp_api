@@ -16,10 +16,10 @@ public interface IOcrApi {
 
     String BASE_URL = "https://api-cn.faceplusplus.com/cardpp";
 
-    String API_OCR_IDCARD = "/v1/ocridcard";
-    String API_OCR_DRIVER_LICENSE = "/v2/ocrdriverlicense";
-    String API_OCR_VEHICLE_LICENSE = "/v1/ocrvehiclelicense";
-    String API_OCR_BANK_CARD = "/v1/ocrbankcard";
+    String API_OCR_IDCARD = BASE_URL + "/v1/ocridcard";
+    String API_OCR_DRIVER_LICENSE = BASE_URL + "/v2/ocrdriverlicense";
+    String API_OCR_VEHICLE_LICENSE = BASE_URL + "/v1/ocrvehiclelicense";
+    String API_OCR_BANK_CARD = BASE_URL + "/v1/ocrbankcard";
 
     /**
      * 身份证识别

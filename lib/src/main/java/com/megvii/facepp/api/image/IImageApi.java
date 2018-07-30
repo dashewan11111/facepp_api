@@ -16,10 +16,10 @@ public interface IImageApi {
 
     String BASE_URL = "https://api-cn.faceplusplus.com/imagepp";
 
-    String API_IMAGE_SCENE_DETECT = "/beta/detectsceneandobject";
-    String API_IMAGE_RECOGNIZE_TEXT = "/v1/recognizetext";
-    String API_IMAGE_MERGE_FACE = "/v1/mergeface";
-    String API_IMAGE_LICENSE_PLATE = "/v1/licenseplate";
+    String API_IMAGE_SCENE_DETECT = BASE_URL + "/beta/detectsceneandobject";
+    String API_IMAGE_RECOGNIZE_TEXT = BASE_URL + "/v1/recognizetext";
+    String API_IMAGE_MERGE_FACE = BASE_URL + "/v1/mergeface";
+    String API_IMAGE_LICENSE_PLATE = BASE_URL + "/v1/licenseplate";
 
     /**
      * 场景识别

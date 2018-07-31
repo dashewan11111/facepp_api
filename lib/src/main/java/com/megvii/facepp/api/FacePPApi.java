@@ -187,7 +187,7 @@ public class FacePPApi implements IFaceApi, IHumanBodyApi, IOcrApi, IImageApi {
 
     @Override
     public void gesture(Map<String, String> params, byte[] filePath, IFacePPCallBack<GestureResponse> callBack) {
-        humanBodyApi.gesture(buildParams(params), callBack);
+        humanBodyApi.gesture(buildParams(params), filePath, callBack);
     }
 
     /***********************************************************************************************/

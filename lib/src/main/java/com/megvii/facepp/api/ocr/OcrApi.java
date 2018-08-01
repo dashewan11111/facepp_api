@@ -23,7 +23,7 @@ public class OcrApi implements IOcrApi {
 
     @Override
     public void ocrIDCard(Map<String, String> params, byte[] filePath, IFacePPCallBack<OcrIdCardResponse> callBack) {
-        HttpUtils.post(API_OCR_IDCARD, params, new TransCallBack<>(callBack, OcrIdCardResponse.class));
+        HttpUtils.post(API_OCR_IDCARD, params, filePath, new TransCallBack<>(callBack, OcrIdCardResponse.class));
     }
 
     @Override
@@ -33,7 +33,7 @@ public class OcrApi implements IOcrApi {
 
     @Override
     public void ocrDriver(Map<String, String> params, byte[] filePath, IFacePPCallBack<DriverLicenseResponse> callBack) {
-        HttpUtils.post(API_OCR_DRIVER_LICENSE, params, new TransCallBack<>(callBack, DriverLicenseResponse.class));
+        HttpUtils.post(API_OCR_DRIVER_LICENSE, params, filePath, new TransCallBack<>(callBack, DriverLicenseResponse.class));
     }
 
     @Override
@@ -43,7 +43,7 @@ public class OcrApi implements IOcrApi {
 
     @Override
     public void ocrVehicel(Map<String, String> params, byte[] filePath, IFacePPCallBack<VehicleResponse> callBack) {
-        HttpUtils.post(API_OCR_VEHICLE_LICENSE, params, new TransCallBack<>(callBack, VehicleResponse.class));
+        HttpUtils.post(API_OCR_VEHICLE_LICENSE, params, filePath, new TransCallBack<>(callBack, VehicleResponse.class));
     }
 
     @Override
@@ -53,6 +53,6 @@ public class OcrApi implements IOcrApi {
 
     @Override
     public void ocrBankCard(Map<String, String> params, byte[] filePath, IFacePPCallBack<BankCardResponse> callBack) {
-        HttpUtils.post(API_OCR_BANK_CARD, params, new TransCallBack<>(callBack, BankCardResponse.class));
+        HttpUtils.post(API_OCR_BANK_CARD, params, filePath, new TransCallBack<>(callBack, BankCardResponse.class));
     }
 }

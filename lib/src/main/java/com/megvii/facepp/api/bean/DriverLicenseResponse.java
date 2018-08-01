@@ -1,36 +1,38 @@
 package com.megvii.facepp.api.bean;
 
+import java.util.Arrays;
+
 /**
  * @author by licheng on 2018/7/3.
  */
 
 public class DriverLicenseResponse extends BaseResponse {
 
-    private DriverLicenseMain main;
+    private DriverLicenseMain[] main;
 
-    private DriverLicenseSecond second;
+    private DriverLicenseSecond[] second;
 
-    public DriverLicenseMain getMain() {
+    public DriverLicenseMain[] getMain() {
         return main;
     }
 
-    public void setMain(DriverLicenseMain main) {
+    public void setMain(DriverLicenseMain[] main) {
         this.main = main;
     }
 
-    public DriverLicenseSecond getSecond() {
+    public DriverLicenseSecond[] getSecond() {
         return second;
     }
 
-    public void setSecond(DriverLicenseSecond second) {
+    public void setSecond(DriverLicenseSecond[] second) {
         this.second = second;
     }
 
     @Override
     public String toString() {
         return "{" +
-                "\"main\":" + main +
-                ", \"second\":" + second +
+                "\"main\":" + Arrays.toString(main) +
+                ", \"second\":" + Arrays.toString(second) +
                 '}';
     }
 }

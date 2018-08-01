@@ -23,10 +23,10 @@ import com.megvii.facepp.api.bean.MergeFaceResponse;
 import com.megvii.facepp.api.bean.OcrIdCardResponse;
 import com.megvii.facepp.api.bean.RecognizeTextRespons;
 import com.megvii.facepp.api.bean.SceneDetectResponse;
-import com.megvii.facepp.api.bean.VehicleResponse;
-import com.megvii.facepp.api.face.IFaceApi;
 import com.megvii.facepp.api.bean.SearchResponse;
+import com.megvii.facepp.api.bean.VehicleResponse;
 import com.megvii.facepp.api.face.FaceApi;
+import com.megvii.facepp.api.face.IFaceApi;
 import com.megvii.facepp.api.humanbody.HumanBodyApi;
 import com.megvii.facepp.api.humanbody.IHumanBodyApi;
 import com.megvii.facepp.api.image.IImageApi;
@@ -213,13 +213,13 @@ public class FacePPApi implements IFaceApi, IHumanBodyApi, IOcrApi, IImageApi {
     }
 
     @Override
-    public void ocrVehicel(Map<String, String> params, IFacePPCallBack<VehicleResponse> callBack) {
-        ocrApi.ocrVehicel(buildParams(params), callBack);
+    public void ocrVehicle(Map<String, String> params, IFacePPCallBack<VehicleResponse> callBack) {
+        ocrApi.ocrVehicle(buildParams(params), callBack);
     }
 
     @Override
-    public void ocrVehicel(Map<String, String> params, byte[] filePath, IFacePPCallBack<VehicleResponse> callBack) {
-        ocrApi.ocrVehicel(buildParams(params), filePath, callBack);
+    public void ocrVehicle(Map<String, String> params, byte[] filePath, IFacePPCallBack<VehicleResponse> callBack) {
+        ocrApi.ocrVehicle(buildParams(params), filePath, callBack);
     }
 
     @Override
@@ -273,7 +273,6 @@ public class FacePPApi implements IFaceApi, IHumanBodyApi, IOcrApi, IImageApi {
     public void recognizePlat(Map<String, String> params, byte[] filePath, IFacePPCallBack<LicensePlatResponse> callBack) {
         imageApi.recognizePlat(buildParams(params), filePath, callBack);
     }
-
 
     private Map<String, String> buildParams(Map<String, String> params) {
         if (null != params) {

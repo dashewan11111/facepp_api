@@ -37,12 +37,12 @@ public class OcrApi implements IOcrApi {
     }
 
     @Override
-    public void ocrVehicel(Map<String, String> params, IFacePPCallBack<VehicleResponse> callBack) {
-        ocrVehicel(params, null, callBack);
+    public void ocrVehicle(Map<String, String> params, IFacePPCallBack<VehicleResponse> callBack) {
+        ocrVehicle(params, null, callBack);
     }
 
     @Override
-    public void ocrVehicel(Map<String, String> params, byte[] filePath, IFacePPCallBack<VehicleResponse> callBack) {
+    public void ocrVehicle(Map<String, String> params, byte[] filePath, IFacePPCallBack<VehicleResponse> callBack) {
         HttpUtils.post(API_OCR_VEHICLE_LICENSE, params, filePath, new TransCallBack<>(callBack, VehicleResponse.class));
     }
 

@@ -44,9 +44,9 @@ public interface IOcrApi {
      *
      * @see <a href="https://console.faceplusplus.com.cn/documents/5671706">行驶证识别 Api文档</>
      */
-    void ocrVehicel(Map<String, String> params, IFacePPCallBack<VehicleResponse> callBack);
+    void ocrVehicle(Map<String, String> params, IFacePPCallBack<VehicleResponse> callBack);
 
-    void ocrVehicel(Map<String, String> params, byte[] filePath, IFacePPCallBack<VehicleResponse> callBack);
+    void ocrVehicle(Map<String, String> params, byte[] filePath, IFacePPCallBack<VehicleResponse> callBack);
 
     /**
      * 银行卡识别

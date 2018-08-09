@@ -59,7 +59,7 @@ public interface IFaceApi {
      */
     void compare(Map<String, String> params, IFacePPCallBack<CompareResponse> callBack);
 
-    void compare(Map<String, String> params, byte[] file_1, IFacePPCallBack<CompareResponse> callBack);
+    void compare(Map<String, String> params, Map<String, byte[]> file_1, IFacePPCallBack<CompareResponse> callBack);
 
     void compare(Map<String, String> params, byte[] file_1, byte[] file_2, IFacePPCallBack<CompareResponse> callBack);
 

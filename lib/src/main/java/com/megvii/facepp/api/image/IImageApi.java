@@ -46,7 +46,11 @@ public interface IImageApi {
      */
     void mergeFace(Map<String, String> params, IFacePPCallBack<MergeFaceResponse> callBack);
 
-    void mergeFace(Map<String, String> params, byte[] filePath, IFacePPCallBack<MergeFaceResponse> callBack);
+    void mergeFace(Map<String, String> params, Map<String, byte[]> filePath, IFacePPCallBack<MergeFaceResponse> callBack);
+
+    void mergeFace(Map<String, String> params, byte[] template_file, byte[] merge_file, IFacePPCallBack<MergeFaceResponse> callBack);
+
+    void mergeFace(Map<String, String> params, Map<String, byte[]> file1, Map<String, byte[]> file2, IFacePPCallBack<MergeFaceResponse> callBack);
 
     /**
      * 车牌识别

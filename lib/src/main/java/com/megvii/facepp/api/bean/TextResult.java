@@ -2,7 +2,6 @@ package com.megvii.facepp.api.bean;
 
 import com.alibaba.fastjson.annotation.JSONField;
 
-import java.awt.Point;
 import java.util.List;
 
 /**

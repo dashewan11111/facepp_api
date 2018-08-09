@@ -8,6 +8,7 @@ import com.megvii.facepp.api.bean.MergeFaceResponse;
 import com.megvii.facepp.api.bean.RecognizeTextRespons;
 import com.megvii.facepp.api.bean.SceneDetectResponse;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -38,12 +39,28 @@ public class ImageApi implements IImageApi {
 
     @Override
     public void mergeFace(Map<String, String> params, IFacePPCallBack<MergeFaceResponse> callBack) {
-        mergeFace(params, null, callBack);
+        HttpUtils.post(API_IMAGE_MERGE_FACE, params, new TransCallBack<>(callBack, MergeFaceResponse.class));
     }
 
     @Override
-    public void mergeFace(Map<String, String> params, byte[] filePath, IFacePPCallBack<MergeFaceResponse> callBack) {
+    public void mergeFace(Map<String, String> params, Map<String, byte[]> filePath, IFacePPCallBack<MergeFaceResponse> callBack) {
         HttpUtils.post(API_IMAGE_MERGE_FACE, params, filePath, new TransCallBack<>(callBack, MergeFaceResponse.class));
+    }
+
+    @Override
+    public void mergeFace(Map<String, String> params, byte[] filePath1, byte[] filePath2, IFacePPCallBack<MergeFaceResponse> callBack) {
+        Map<String, byte[]> file1 = new HashMap<>();
+        file1.put(HttpUtils.KEY_TEMPLATE_FILE, filePath1);
+
+        Map<String, byte[]> file2 = new HashMap<>();
+        file2.put(HttpUtils.KEY_MERGE_FILE, filePath2);
+
+        HttpUtils.post(API_IMAGE_MERGE_FACE, params, file1, file2, new TransCallBack<>(callBack, MergeFaceResponse.class));
+    }
+
+    @Override
+    public void mergeFace(Map<String, String> params, Map<String, byte[]> file1, Map<String, byte[]> file2, IFacePPCallBack<MergeFaceResponse> callBack) {
+        HttpUtils.post(API_IMAGE_MERGE_FACE, params, file1, file2, new TransCallBack<>(callBack, MergeFaceResponse.class));
     }
 
     @Override

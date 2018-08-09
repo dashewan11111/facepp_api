@@ -1,6 +1,5 @@
 package com.megvii.facepp.api.bean;
 
-import java.awt.Point;
 
 /**
  * @author by licheng on 2018/7/3.

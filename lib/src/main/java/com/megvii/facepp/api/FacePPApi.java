@@ -79,7 +79,7 @@ public class FacePPApi implements IFaceApi, IHumanBodyApi, IOcrApi, IImageApi {
     }
 
     @Override
-    public void compare(Map<String, String> params, byte[] file_1, IFacePPCallBack<CompareResponse> callBack) {
+    public void compare(Map<String, String> params, Map<String, byte[]> file_1, IFacePPCallBack<CompareResponse> callBack) {
         faceApi.compare(buildParams(params), file_1, callBack);
     }
 
@@ -260,8 +260,18 @@ public class FacePPApi implements IFaceApi, IHumanBodyApi, IOcrApi, IImageApi {
     }
 
     @Override
-    public void mergeFace(Map<String, String> params, byte[] filePath, IFacePPCallBack<MergeFaceResponse> callBack) {
+    public void mergeFace(Map<String, String> params, Map<String, byte[]> filePath, IFacePPCallBack<MergeFaceResponse> callBack) {
         imageApi.mergeFace(buildParams(params), filePath, callBack);
+    }
+
+    @Override
+    public void mergeFace(Map<String, String> params, Map<String, byte[]> file1, Map<String, byte[]> file2, IFacePPCallBack<MergeFaceResponse> callBack) {
+        imageApi.mergeFace(buildParams(params), file1, file2, callBack);
+    }
+
+    @Override
+    public void mergeFace(Map<String, String> params, byte[] template_file, byte[] merge_file, IFacePPCallBack<MergeFaceResponse> callBack) {
+        imageApi.mergeFace(buildParams(params), template_file, merge_file, callBack);
     }
 
     @Override

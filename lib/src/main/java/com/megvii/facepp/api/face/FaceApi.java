@@ -18,6 +18,7 @@ import com.megvii.facepp.api.bean.FaceSetUpdateResponse;
 import com.megvii.facepp.api.bean.FaceToken;
 import com.megvii.facepp.api.bean.SearchResponse;
 
+import java.util.HashMap;
 import java.util.Map;
 
 
@@ -39,17 +40,23 @@ public class FaceApi implements IFaceApi {
 
     @Override
     public void compare(Map<String, String> params, IFacePPCallBack<CompareResponse> callBack) {
-        compare(params, null, callBack);
+        HttpUtils.post(API_COMPARE, params, new TransCallBack<>(callBack, CompareResponse.class));
     }
 
     @Override
-    public void compare(Map<String, String> params, byte[] file_1, IFacePPCallBack<CompareResponse> callBack) {
-        compare(params, file_1, callBack);
+    public void compare(Map<String, String> params, Map<String, byte[]> file, IFacePPCallBack<CompareResponse> callBack) {
+        HttpUtils.post(API_COMPARE, params, file, new TransCallBack<>(callBack, CompareResponse.class));
     }
 
     @Override
     public void compare(Map<String, String> params, byte[] file_1, byte[] file_2, IFacePPCallBack<CompareResponse> callBack) {
-        HttpUtils.post(API_COMPARE, params, file_1, file_2, new TransCallBack<>(callBack, CompareResponse.class));
+        Map<String, byte[]> file1 = new HashMap<>();
+        file1.put(HttpUtils.KEY_IMAGE_FILE_1, file_1);
+
+        Map<String, byte[]> file2 = new HashMap<>();
+        file2.put(HttpUtils.KEY_IMAGE_FILE_2, file_2);
+
+        HttpUtils.post(API_COMPARE, params, file1, file2, new TransCallBack<>(callBack, CompareResponse.class));
     }
 
     @Override

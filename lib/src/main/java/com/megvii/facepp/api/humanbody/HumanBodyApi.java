@@ -6,6 +6,7 @@ import com.megvii.facepp.api.TransCallBack;
 import com.megvii.facepp.api.bean.GestureResponse;
 import com.megvii.facepp.api.bean.HumanBodyDetectResponse;
 import com.megvii.facepp.api.bean.HumanSegmentResponse;
+import com.megvii.facepp.api.bean.SkeletonResponse;
 
 import java.util.Map;
 
@@ -43,5 +44,15 @@ public class HumanBodyApi implements IHumanBodyApi {
     @Override
     public void gesture(Map<String, String> params, byte[] filePath, IFacePPCallBack<GestureResponse> callBack) {
         HttpUtils.post(API_HUMANBODY_GUSTURE, params, filePath, new TransCallBack<>(callBack, GestureResponse.class));
+    }
+
+    @Override
+    public void skeleton(Map<String, String> params, IFacePPCallBack<SkeletonResponse> callBack) {
+        skeleton(params, null, callBack);
+    }
+
+    @Override
+    public void skeleton(Map<String, String> params, byte[] filePath, IFacePPCallBack<SkeletonResponse> callBack) {
+        HttpUtils.post(API_HUMANBODY_SKELETON, params, filePath, new TransCallBack<>(callBack, SkeletonResponse.class));
     }
 }

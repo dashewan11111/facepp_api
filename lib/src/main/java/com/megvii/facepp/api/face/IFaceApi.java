@@ -1,6 +1,7 @@
 package com.megvii.facepp.api.face;
 
 import com.megvii.facepp.api.IFacePPCallBack;
+import com.megvii.facepp.api.TaskQueryResponse;
 import com.megvii.facepp.api.bean.BeautyResponse;
 import com.megvii.facepp.api.bean.CompareResponse;
 import com.megvii.facepp.api.bean.DetectResponse;
@@ -36,6 +37,10 @@ public interface IFaceApi {
     String API_FACE_SET_GET_FACESETS = BASE_URL + "/v3/faceset/getfacesets";
     String API_FACE_SET_GET_DETAIL = BASE_URL + "/v3/faceset/getdetail";
     String API_FACE_SET_DELETE = BASE_URL + "/v3/faceset/delete";
+
+    String API_FACE_SET_ADD_FACE_ASYNC = BASE_URL + "/v3/faceset/async/addface";
+    String API_FACE_SET_REMOVE_FACE_ASYNC = BASE_URL + "/v3/faceset/async/removeface";
+    String API_FACE_SET_TASK_QUERY = BASE_URL + "/v3/faceset/async/task_status";
 
     String API_FACE_ANALYZE = BASE_URL + "/v3/face/analyze";
     String API_FACE_GET_DETAIL = BASE_URL + "/v3/face/getdetail";
@@ -150,5 +155,26 @@ public interface IFaceApi {
     void beautify(Map<String, String> params, IFacePPCallBack<BeautyResponse> callBack);
 
     void beautify(Map<String, String> params, byte[] filePath, IFacePPCallBack<BeautyResponse> callBack);
+
+    /**
+     * 向 faceset 添加人脸
+     *
+     * @see <a href="https://console.faceplusplus.com.cn/documents/4888389">faceset/addface Api文档</>
+     */
+    void facesetAddFaceAsync(Map<String, String> params, IFacePPCallBack<FaceSetAddResponse> callBack);
+
+    /**
+     * 从 faceSet 中删除人脸
+     *
+     * @see <a href="https://console.faceplusplus.com.cn/documents/4888399">faceset/removeface Api文档</>
+     */
+    void facesetRemoveFaceAsync(Map<String, String> params, IFacePPCallBack<FaceSetRemoveResponse> callBack);
+
+    /**
+     * 查询之前调用的异步添加/删除人脸请求，异步任务当前的状态
+     *
+     * @<a href="https://console.faceplusplus.com.cn/documents/40622157">faceset/taskQuery Api文档</>
+     */
+    void facesetTaskQuery(Map<String, String> params, IFacePPCallBack<TaskQueryResponse> callBack);
 
 }

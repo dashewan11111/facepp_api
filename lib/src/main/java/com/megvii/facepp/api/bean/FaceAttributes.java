@@ -8,7 +8,7 @@ public class FaceAttributes {
 
     private ValueBean gender;
     private ValueBean age;
-    private Smile smiling;
+    private Smile smile;
     private HeadPose headpose;
     private Threshold facequality;
 
@@ -38,12 +38,12 @@ public class FaceAttributes {
         this.age = age;
     }
 
-    public Smile getSmiling() {
-        return smiling;
+    public Smile getSmile() {
+        return smile;
     }
 
-    public void setSmiling(Smile smiling) {
-        this.smiling = smiling;
+    public void setSmile(Smile smile) {
+        this.smile = smile;
     }
 
     public HeadPose getHeadpose() {
@@ -139,7 +139,7 @@ public class FaceAttributes {
         return "{" +
                 "\"gender\":" + gender +
                 ", \"age\":" + age +
-                ", \"smiling\":" + smiling +
+                ", \"smile\":" + smile +
                 ", \"headpose\":" + headpose +
                 ", \"facequality\":" + facequality +
                 ", \"blur\":" + blur +

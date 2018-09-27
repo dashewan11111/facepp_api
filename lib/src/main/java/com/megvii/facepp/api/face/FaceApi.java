@@ -1,5 +1,6 @@
 package com.megvii.facepp.api.face;
 
+import com.megvii.facepp.api.TaskQueryResponse;
 import com.megvii.facepp.api.bean.BeautyResponse;
 import com.megvii.facepp.api.bean.FaceSetListResponse;
 import com.megvii.facepp.api.IFacePPCallBack;
@@ -127,5 +128,20 @@ public class FaceApi implements IFaceApi {
     @Override
     public void beautify(Map<String, String> params, byte[] filePath, IFacePPCallBack<BeautyResponse> callBack) {
         HttpUtils.post(API_BEAUTY, params, filePath, new TransCallBack<>(callBack, BeautyResponse.class));
+    }
+
+    @Override
+    public void facesetAddFaceAsync(Map<String, String> params, IFacePPCallBack<FaceSetAddResponse> callBack) {
+        HttpUtils.post(API_FACE_SET_ADD_FACE_ASYNC, params, new TransCallBack<>(callBack, FaceSetAddResponse.class));
+    }
+
+    @Override
+    public void facesetRemoveFaceAsync(Map<String, String> params, IFacePPCallBack<FaceSetRemoveResponse> callBack) {
+        HttpUtils.post(API_FACE_SET_REMOVE_FACE_ASYNC, params, new TransCallBack<>(callBack, FaceSetRemoveResponse.class));
+    }
+
+    @Override
+    public void facesetTaskQuery(Map<String, String> params, IFacePPCallBack<TaskQueryResponse> callBack) {
+        HttpUtils.post(API_FACE_SET_TASK_QUERY, params, new TransCallBack<>(callBack, TaskQueryResponse.class));
     }
 }

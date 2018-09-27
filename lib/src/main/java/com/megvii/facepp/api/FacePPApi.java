@@ -24,6 +24,7 @@ import com.megvii.facepp.api.bean.OcrIdCardResponse;
 import com.megvii.facepp.api.bean.RecognizeTextRespons;
 import com.megvii.facepp.api.bean.SceneDetectResponse;
 import com.megvii.facepp.api.bean.SearchResponse;
+import com.megvii.facepp.api.bean.SkeletonResponse;
 import com.megvii.facepp.api.bean.VehicleResponse;
 import com.megvii.facepp.api.face.FaceApi;
 import com.megvii.facepp.api.face.IFaceApi;
@@ -158,6 +159,21 @@ public class FacePPApi implements IFaceApi, IHumanBodyApi, IOcrApi, IImageApi {
         faceApi.beautify(buildParams(params), filePath, callBack);
     }
 
+    @Override
+    public void facesetAddFaceAsync(Map<String, String> params, IFacePPCallBack<FaceSetAddResponse> callBack) {
+        faceApi.facesetAddFaceAsync(buildParams(params), callBack);
+    }
+
+    @Override
+    public void facesetRemoveFaceAsync(Map<String, String> params, IFacePPCallBack<FaceSetRemoveResponse> callBack) {
+        faceApi.facesetRemoveFaceAsync(buildParams(params), callBack);
+    }
+
+    @Override
+    public void facesetTaskQuery(Map<String, String> params, IFacePPCallBack<TaskQueryResponse> callBack) {
+        faceApi.facesetTaskQuery(buildParams(params), callBack);
+    }
+
     /***********************************************************************************************/
 
     @Override
@@ -188,6 +204,16 @@ public class FacePPApi implements IFaceApi, IHumanBodyApi, IOcrApi, IImageApi {
     @Override
     public void gesture(Map<String, String> params, byte[] filePath, IFacePPCallBack<GestureResponse> callBack) {
         humanBodyApi.gesture(buildParams(params), filePath, callBack);
+    }
+
+    @Override
+    public void skeleton(Map<String, String> params, IFacePPCallBack<SkeletonResponse> callBack) {
+        humanBodyApi.skeleton(buildParams(params), callBack);
+    }
+
+    @Override
+    public void skeleton(Map<String, String> params, byte[] filePath, IFacePPCallBack<SkeletonResponse> callBack) {
+        humanBodyApi.skeleton(buildParams(params), filePath, callBack);
     }
 
     /***********************************************************************************************/

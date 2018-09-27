@@ -1,10 +1,12 @@
-package com.megvii.facepp.api.bean;
+package com.megvii.facepp.api;
+
+import com.megvii.facepp.api.bean.BaseResponse;
 
 /**
- * @author by licheng on 2018/7/3.
+ * @author by licheng on 2018/9/26.
  */
 
-public class FaceSetAddResponse extends FaceSetCreatResponse {
+public class TaskQueryResponse extends BaseResponse {
 
     private String task_id;
 
@@ -21,7 +23,7 @@ public class FaceSetAddResponse extends FaceSetCreatResponse {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        FaceSetAddResponse that = (FaceSetAddResponse) o;
+        TaskQueryResponse that = (TaskQueryResponse) o;
 
         return task_id != null ? task_id.equals(that.task_id) : that.task_id == null;
     }
